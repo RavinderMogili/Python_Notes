@@ -1,0 +1,8 @@
+def I(n):
+    s = '+'
+    for i in range(n):
+        s += s
+        yield s
+
+for x in I(1):
+    print(x,end='')
